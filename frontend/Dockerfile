@@ -22,8 +22,8 @@ WORKDIR /app
 # Copy built assets and dependencies from frontend-builder stage
 COPY --from=frontend-builder /app .
 
-# Copy the .env.sample file to .env.local
-COPY .env.docker .env.local
+# Add Vite API path directly as environment variable
+ENV VITE_API_PATH="http://13.60.211.117:31100"
 
 # Expose port 5173 for the Node.js application
 EXPOSE 5173
