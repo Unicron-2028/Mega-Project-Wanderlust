@@ -1,0 +1,14 @@
+﻿# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Keys / secrets (DON'T COMMIT PRIVATE KEYS)
+*.pem
+*.key
+*.pfx
